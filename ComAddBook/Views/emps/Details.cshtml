@@ -1,0 +1,56 @@
+﻿@model ComAddBook.Models.emp
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID)
+        </dd>*@
+            <dt>
+            @Html.DisplayNameFor(model => model.First)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.position)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.position)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
